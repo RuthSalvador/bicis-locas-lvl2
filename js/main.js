@@ -8,6 +8,14 @@ function validateForm(){
 
   var toolDiv =  document.getElementsByClassName('input-box');
   var toolAlert = document.createElement('span');
+//  toolAlert.setAttribute('class','tt-show');
+
+  /*function noneTT(){
+  var arrayTt = document.getElementsByClassName('tt-show');
+  for (var i = 0; i < arrayTt.length; i++) {
+    arrayTt[i].setAttribute('class','tt-none');
+    arrayTt[i].parentNode.removeChild(arrayTt[i]);
+  }*/
 
   /*** Validando campo nombre***/
     if(name.value.length == 0){
@@ -93,6 +101,4 @@ function validateForm(){
     }
 
     return alert (name.value +' '+ lastname.value + ', muchas gracias por registrarse');
-
-
 }
